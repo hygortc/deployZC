@@ -160,9 +160,9 @@ done
 # [[-r $PRIVKEY ]] && cat $PRIVKEY >$COMMERCIALKEY;chown $ZIMBRA_USER:$ZIMBRA_USER $COMMERCIALKEY || echo -e "O arquivo não existe ou não tem permissão de leitura \n $PRIVKEY"; exit 1
 
 # echo -e "\e[1;44mA Verificando se o certificado gerado é válido \e[0m"
-# sudo -u $ZIMBRA_USER $ZMCERTMGR verifycrt comm $COMMERCIALKEY $CERTIFICATE $CHAIN
+# sudo -u $ZIMBRA_USER $ZMCERTMGR verifycrt comm $COMMERCIALKEY $CERTIFICATE $CHAIN_ISRG
 
 # echo -e "\e[1;44mA Deploy do certificado \e[0m"
-# sudo -u $ZIMBRA_USER $ZMCERTMGR deploycrt comm $CERTIFICATE $CHAIN
+# sudo -u $ZIMBRA_USER $ZMCERTMGR deploycrt comm $CERTIFICATE $CHAIN_ISRG
 
 # sudo -u $ZIMBRA_USER $ZMCONTROL start
