@@ -1,4 +1,5 @@
 #!/bin/bash
+#   deployZC v1.0 https://github.com/hygortc/deployZC
 #
 #   usage: 
 #            deployZC -d DOMAIN
@@ -44,26 +45,26 @@ CLS_COLOR="\033[0m"
 
 
 h() {
-          echo "                                                                          "
-          echo "                                                                          "
-          echo "            Deploy let's encrypt cert in  Zimbra                          "
-          echo "                                                                          "
-          echo "Usage: $0                                                                 "
-          echo "                                                                          "
-          echo "                                                                          "    
-          echo "            -v Display information about what version                     "        
-          echo "            -y Display a brief listing of available commands and options. "
-          echo "            -d zimbra domain                                              "
-          echo "            -x ISRG X1 path default: $ISRGROOTX1                          "
-          echo "            -k Privkey path default: $PRIVKEY                             "
-          echo "            -C Cert path default: $CERTIFICATE                            "
-          echo "            -z Zimbra comercial key path default: $COMMERCIALKEY          "
-          echo "            -c Cert chain path default: $CHAIN                            "
-          echo "            -u Zimbra user  default: $ZIMBRA_USER                         "
-          echo "            -e Check expiration date: use -e domain                       "
-          echo "            -y Assume the answer "yes" to any prompts                     "
-          echo "                                                                          "
-          echo "                                                                          "          
+            echo "                                                                          "
+            echo "                                                                          "
+            echo "            Deploy let's encrypt cert in  Zimbra                          "
+            echo "                                                                          "
+            echo "Usage: $0                                                                 "
+            echo "                                                                          "
+            echo "                                                                          "    
+            echo "            -v Display information about what version                     "        
+            echo "            -y Display a brief listing of available commands and options. "
+            echo "            -d zimbra domain                                              "
+            echo "            -x ISRG X1 path default: $ISRGROOTX1                          "
+            echo "            -k Privkey path default: $PRIVKEY                             "
+            echo "            -C Cert path default: $CERTIFICATE                            "
+            echo "            -z Zimbra comercial key path default: $COMMERCIALKEY          "
+            echo "            -c Cert chain path default: $CHAIN                            "
+            echo "            -u Zimbra user  default: $ZIMBRA_USER                         "
+            echo "            -e Check expiration date: use -e domain                       "
+            echo "            -y Assume the answer "yes" to any prompts                     "
+            echo "                                                                          "
+            echo "                                                                          "          
           exit 1
 }
 
